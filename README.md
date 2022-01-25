@@ -142,7 +142,7 @@ Finally, to go further, feel free to look at this workshop https://github.com/pa
 <br />
 <br />
 <br />
-
+<hr />
 # Snyk Open Source Steps
 
 Snyk Open Source is a Software Composition Analysis took which seamlessly and proactively finds, prioritizes and fixes vulnerabilities and license violations in open source dependencies
