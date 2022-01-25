@@ -89,7 +89,7 @@ Snyk Code is developer-first, embedding SAST as part of the development process,
 
 ## Step 4 Add project to find Snyk Code Vulnerabilities
 
-Now that Snyk is connected to your GitHub Account, import the Forked Repo "**springbootemployee-api**" into Snyk as a Project.
+Now that Snyk is connected to your GitHub Account, import the Forked Repo "**juice-shop**" into Snyk as a Project.
 
 * Navigate to Projects
 * Click "**Add Project**" then select "**GitHub**"
@@ -114,7 +114,7 @@ For each Vulnerability, Snyk displays the following:
 6. A link to a Snyk Learn module on how to fix these type of vulnerabilities if available
 7. The ability to ignore issues you wish to remove from the list
 
-![alt tag](https://i.ibb.co/C2fT6bj/Snyk-Code-vuln.png)
+![alt tag](https://i.ibb.co/yk83tyP/Snyk-Code-vuln.png)
 
 * Click on the "**Full Details**" button as shown below
 
@@ -140,84 +140,19 @@ Finally, to go further, feel free to look at this workshop https://github.com/pa
 
 Snyk Open Source is a Software Composition Analysis took which seamlessly and proactively finds, prioritizes and fixes vulnerabilities and license violations in open source dependencies
 
-## Step 3 Find vulnerabilities
+## Step 5 Find vulnerabilities
 
-Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as a Project.
+* Since Juice-Shop project had been imported in the Step 3, you should see a "**package.json**" project as shown below. 
 
-* Navigate to Projects
-* Click "**Add Project**" then select "**GitHub**"
-* Click on the Repo you forked.
+![alt tag](https://i.ibb.co/d4Qb3TV/Snyk-OS-vuln.png)
 
-![alt tag](https://i.ibb.co/q9Rsxsh/snyk-starter-open-source-3.png)
+* Click on the second "**package.json**" to view our Open Source scan results
 
-_Note: The import can take up to one minute so you can view the import log while it's running as shown below_
+First let's explore the Juice-Shop project risks by clicking on the "**package.json**" file which is the manifest file where the open source dependencies are declared.
 
-![alt tag](https://i.ibb.co/RQsX6jZ/snyk-starter-open-source-14.png)
+![alt tag](https://i.ibb.co/ZhN6tXY/Package-json-view.png)
 
-## Step 4 Fix using a Pull Request
-
-First let's explore the Goof project risks by clicking on the "**package.json**" file which is the manifest file where the open source dependencies are declared. 
-
-`package.json`
-
-```json
-{
-  "name": "goof",
-  "version": "1.0.1",
-  "description": "A vulnerable todo demo application",
-  "homepage": "https://snyk.io/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Snyk/snyk-todo-list-demo-app/"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "build": "browserify -r jquery > public/js/bundle.js",
-    "cleanup": "mongo express-todo --eval 'db.todos.remove({});'",
-    "test": "snyk test"
-  },
-  "dependencies": {
-    "adm-zip": "0.4.7",
-    "body-parser": "1.9.0",
-    "cfenv": "^1.0.4",
-    "consolidate": "0.14.5",
-    "cookie-parser": "1.3.3",
-    "dustjs-helpers": "1.5.0",
-    "dustjs-linkedin": "2.5.0",
-    "ejs": "1.0.0",
-    "ejs-locals": "1.0.2",
-    "errorhandler": "1.2.0",
-    "express": "4.12.4",
-    "express-fileupload": "0.0.5",
-    "file-type": "^8.1.0",
-    "humanize-ms": "1.0.1",
-    "jquery": "^2.2.4",
-    "lodash": "4.17.4",
-    "marked": "0.3.5",
-    "method-override": "latest",
-    "moment": "2.15.1",
-    "mongodb": "^3.5.9",
-    "mongoose": "4.2.4",
-    "morgan": "latest",
-    "ms": "^0.7.1",
-    "mysql": "^2.18.1",
-    "npmconf": "0.0.24",
-    "optional": "^0.1.3",
-    "st": "0.2.4",
-    "stream-buffers": "^3.0.1",
-    "tap": "^11.1.3",
-    "typeorm": "^0.2.24"
-  },
-  "devDependencies": {
-    "browserify": "^13.1.1",
-    "snyk": "^1.244.0"
-  },
-  "license": "Apache-2.0"
-}
-```
-* Click on "**package.json**"
-
-![alt tag](https://i.ibb.co/THs4g5q/snyk-starter-open-source-4.png)
+Thenk go back on the Snyk WebUI and let's have a look at the vulnerabilities.
 
 For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/) :
 1. The module that introduced it and, in the case of transitive dependencies, its direct dependency,
@@ -227,31 +162,35 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 1. Links to CWE, CVE and CVSS Score
 1. Plus more ...
 
-![alt tag](https://i.ibb.co/LYm0fVf/snyk-starter-open-source-5.png)
+![alt tag](https://i.ibb.co/xq2GWCs/Snyk-OS-vuln.png)
+
+## Step 6 Fix using a Pull Request
 
 When using the GitHub integration, and if a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. 
 
 * Click on "**Fix this vulnerability**" for "**typeorm Prototype Pollution**" issue as shown below
 
-![alt tag](https://i.ibb.co/sRJjfnC/snyk-starter-open-source-6.png)
+![alt tag](https://i.ibb.co/9NHPmn2/Snyk-OS-Fix-this-vuln.png)
 
 * On the next screen, you'll be able to confirm the issue to fix with this PR. Click "**Open a Fix PR**"
 
-![alt tag](https://i.ibb.co/w7m8HPv/snyk-starter-open-source-7.png)
-![alt tag](https://i.ibb.co/J7MmSQc/snyk-starter-open-source-8.png)
+![alt tag](https://i.ibb.co/y5PHhhT/Vulns-to-fix-pr-view.png)
+![alt tag](https://i.ibb.co/p2Lx5Rd/Open-fix-pr-button.png)
 
 * Once it's ready, you'll be taken to the PR in GitHub, where you can review the changes in the file diff view:
 
 Snyk integrates with your preferred Git repository to scan your manifest files for any new code and potential vulnerabilities whenever you submit a pull request (PR), protecting the security of your code before you ever merge it with the main branch
 
-![alt tag](https://i.ibb.co/P6bcxkh/snyk-starter-open-source-9.png)
+![alt tag](https://i.ibb.co/ySc72zN/Fix-PR-Github.png)
 
 * We see that CI checks completed successfully, assuring us we didn't introduce a breaking change
 
-![alt tag](https://i.ibb.co/SPMCMpP/snyk-starter-open-source-10.png)
+![alt tag](https://i.ibb.co/BzrNHvg/Files-changed-Github.png)
 
 * Optionally now, go ahead and merge the PR!
-* Back in Snyk we can appreciate that our package.json file has 1 less High Severity Vulnerability if you did fix it
+* Back in Snyk we can appreciate that our package.json file has 1 less Critical Severity Vulnerability if you did fix it
+
+Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are available (Testing using the Snyk CLI and the IDE Integration with VS Code)
 
 
 ## Step 5 Find vulnerabilities in Goof’s Dockerfile
