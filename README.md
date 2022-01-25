@@ -73,9 +73,9 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 
 ![alt tag](https://i.ibb.co/bPqqybM/snyk-starter-open-source-1.png)
 
-
-
-
+<br />
+<br />
+<br />
 
 # Snyk Code Steps
 
@@ -139,9 +139,9 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-code-workshop where additional steps are available (Snyk Code CLI Test and Snyk Code Test using VS Code)
 
-
-
-
+<br />
+<br />
+<br />
 
 # Snyk Open Source Steps
 
@@ -201,9 +201,9 @@ Snyk integrates with your preferred Git repository to scan your manifest files f
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are guided (Testing using the Snyk CLI and the IDE Integration with VS Code)
 
-
-
-
+<br />
+<br />
+<br />
 
 # Snyk Container Steps
 
@@ -268,9 +268,9 @@ Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" butto
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-container-workshop where you will be able to scan a container image from a Docker Hub integration and do Container test using the Snyk CLI. 
 
-
-
-
+<br />
+<br />
+<br />
 
 # Snyk Infrastructure as Code Steps
 
