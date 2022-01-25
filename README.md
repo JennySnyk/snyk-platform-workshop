@@ -31,11 +31,12 @@ Snyk Open Source steps
 * [Step 6 Fix using a Pull Request](#step-4-fix-using-a-pull-request)
 
 Snyk Container steps
-* [Step 7 Find vulnerabilities in Goof’s Dockerfile](#step-5-find-vulnerabilities-in-goofs-dockerfile)
-* [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#step-6-fix-the-dockerfile-from-tag-using-a-pull-request)
+* [Step 7 Find vulnerabilities in Juice-shop’s Dockerfile](#Step-7-Find-vulnerabilities-in-Juice-Shop’s-Dockerfile)
+* [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#Step-8-Fix-the-Dockerfile-FROM-tag-using-a-Pull-Request)
 
 Snyk IaC steps
-* [Step 9 Find vulnerabilities in Goof’s Kubernetes yaml](#step-5-find-vulnerabilities-in-goofs-dockerfile)
+* [Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml]
+* [Step 10 View Snyk IaC Rules](#step-10-view-snyk-iac-rules)
 
 ## Prerequisites
 
