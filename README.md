@@ -190,53 +190,102 @@ Snyk integrates with your preferred Git repository to scan your manifest files f
 * Optionally now, go ahead and merge the PR!
 * Back in Snyk we can appreciate that our package.json file has 1 less Critical Severity Vulnerability if you did fix it
 
-Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are available (Testing using the Snyk CLI and the IDE Integration with VS Code)
+Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are guided (Testing using the Snyk CLI and the IDE Integration with VS Code)
 
 
-## Step 5 Find vulnerabilities in Goof’s Dockerfile
+# Snyk Container Steps
+
+Snyk Container helps you find and fix vulnerabilities in container images. With snyk container you can scale your security capabilities by enabling developers to quickly eliminate a multitude of vulnerabilities by upgrading to a more secure base image or rebuilding when the base image is outdated
+
+You may not always have access to the original source code that runs in your containers, but vulnerabilities in your code dependencies are still important. Snyk can detect and monitor open source dependencies for popular languages as part of the container scan
+
+## Step 7 Find vulnerabilities in Juice-Shop’s Dockerfile
 
 Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository. This allows you to examine security issues before building the image, so helps solve potential problems before they land in your registry or in production.
 
-Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as a Project as this contains a Dockerfile.
+* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the Dockerfile as shown below. 
 
-* Navigate to Projects
-* Click "**Add Project**" then select "**GitHub**"
-* Click on the Repo "goof" that you forked earlier at Step 1.
+![alt tag](https://i.ibb.co/3F6v7x7/Snyk-Container-results.png)
 
-![alt tag](https://i.ibb.co/q9Rsxsh/snyk-starter-open-source-3.png)
+In a Dockerfile project, you can find the relevant metadata of the Dockerfile and the base image used. If the base image is an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the results include recommendations for upgrades to resolve some of the discovered vulnerabilities.
+This is handy as we can remove a substantial amount of issues just by using an alternative base image from minor upgrades to major upgrades if available will be shown including what issues will remain if the basde image is changed and the container re-built.  
 
-_Note: The import can take up to one minute, so you can view the import log while it's running as shown below_
+![alt tag](https://i.ibb.co/myJ2Yf4/Snyk-Container-recommendations-base-image.png)
 
-![alt tag](https://i.ibb.co/RQsX6jZ/snyk-starter-open-source-14.png)
+The supported base images can be found at this [link](https://snyk.io/docker-images/)
 
-* Once imported you should see a reference for the Dockerfile as shown below. 
+For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/) :
 
-![alt tag](https://i.ibb.co/1rNMFhC/snyk-container-9.png)
+1. The module (O/S, base image) that introduced it and, in the case of transitive dependencies, its direct dependency
+1. Details on the path and proposed Remediation, as well as the specific vulnerable functions
+1. Overview
+1. Exploit maturity
+1. Links to CWE, CVE and CVSS Score
+1. Social Trends
+1. Plus more ...
 
-* Go ahead and click on the Dockerfile this is similar to what a scan of a container from a registry looks like BUT this tim we are scanning a Dockerfile itself versus the full container image.
+![alt tag](https://i.ibb.co/X72chjn/Snyk-Container-vuln.png)
 
-In a Dockerfile project, you can find the relevant metadata of the Dockerfile and the base image used. If the base image is an [Official Docker image](https://docs.docker.com/docker-hub/official_images/), the results include recommendations for upgrades to resolve some of the discovered vulnerabilities
-
-## Step 6 Fix the Dockerfile FROM tag using a Pull Request
+## Step 8 Fix the Dockerfile FROM tag using a Pull Request
 
 Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" button as follows:
 
-* Click on "**Open a Fix PR**" for the base image "**node:16.6.0-slim**" as per below
+* Click on "**Open a Fix PR**" for the base image "**node:17.4-slim**" as per below
 
-![alt tag](https://i.ibb.co/5kY26FR/snyk-container-13.png)
+![alt tag](https://i.ibb.co/1ftgqXL/Open-a-fix-PR-image.png)
 
 * Click on "**Open a Fix PR**" on the resulting page as shown below
 
-![alt tag](https://i.ibb.co/C0tn01C/snyk-container-14.png)
+![alt tag](https://i.ibb.co/nkfQ6nY/Open-a-fix-PR-Image-2.png)
 
-* A PR is then created as show below. "**Files Changed**" will show you what it's updating in the Dockerfile itself
+* A PR is then created as show below. 
 
-![alt tag](https://i.ibb.co/py4GdJS/snyk-container-15.png)
+![alt tag](https://i.ibb.co/sCP7Fk3/Github-fix-PR-base-image.png)
 
-* Click on "**Merge Pull Request**" button as shown below
+"**Files Changed**" will show you what it's updating in the Dockerfile itself
 
-![alt tag](https://i.ibb.co/hCwDCFP/snyk-container-16.png)
+![alt tag](https://i.ibb.co/Sfzxm6s/Github-fix-PR-base-image-files-changed.png)
 
-* Return to the projects dashboard and you will see a new scan has occurred automatically and now our Dockerfile shows much less issues than previously. Of course until we build a new container and add it to the registry the container itself will still have the old base image in place.
+* Click on "**Merge Pull Request**" 
 
-![alt tag](https://i.ibb.co/pbqmR1v/snyk-container-17.png)
+* Return to the projects dashboard and you will see a new scan has occurred automatically and now our Dockerfile shows much less issues than previously. 
+
+![alt tag](https://i.ibb.co/vzndsKy/Snyk-Container-new-base-image.png)
+
+Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-container-workshop where you will be able to scan a container image from a Docker Hub integration and do Container test using the Snyk CLI. 
+
+# Snyk Infrastructure as Code Steps
+
+Snyk Infrastructure as Code allows you to find and fix vulnerabilities in your Kubernetes, Helm, Terraform, ARM and CloudFormation configuration files
+
+Developer-focused infrastructure as code security with Snyk allows you to test and monitor Terraform modules and Kubernetes YAML, JSON, and Helm charts to detect configuration issues that could open your deployments to attack and malicious behavior.
+
+## Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml
+
+* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the Dockerfile as shown below. 
+
+![alt tag](https://i.ibb.co/zRB8dqY/Snyk-Ia-C-results.png)
+
+For each Vulnerability, Snyk displays the following ordered by Line no:
+
+1. Each Vulnerability grouped by line no and severity 
+1. Each Vulnerability links to the Snyk policy it was defined against including the path to the issue, what the issue is, the impact and how to resolve it
+1. The ability to ignore issues you wish to remove from the list
+
+![alt tag](https://i.ibb.co/MMFXpwc/Screenshot-2022-01-25-at-20-49-45.png)
+
+## Step 10 View Snyk IaC Rules
+
+Snyk IaC has a comprehensive set of security rules across AWS, Azure, GCP & Kubernetes with support for Terraform, CloudFormation, Kubernetes, and Helm configuration formats. The details of these issues, their impact, and how to fix them are all built-in to Snyk IaC, so developers get feedback directly in their own tools. For reference, we have also documented the security rules that we support for each provider below, along with relevant benchmarks and authoritative third-party references
+
+Navigate to [Snyk Infrastructure as Code](https://snyk.io/security-rules)
+
+Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-iac-workshop where you will be able to test different IaC files and test using the Snyk CLI.
+
+Thanks for attending and completing this workshop
+
+![alt tag](https://i.ibb.co/7tnp1B6/snyk-logo.png)
+
+<hr />
+This workshop is a compliation of Workshops provided by Pas Apicella [pas at snyk.io] a Solution Engineer at Snyk APJ
+
