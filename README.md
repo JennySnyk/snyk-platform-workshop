@@ -41,7 +41,6 @@ Snyk IaC steps
 ## Prerequisites
 
 * public GitHub account - http://github.com
-* snyk CLI - https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI
 * Registered account on Snyk App - http://app.snyk.io
 
 _NOTE: Please ensure you have meet the Prerequisites prior to starting this workshop_ 
