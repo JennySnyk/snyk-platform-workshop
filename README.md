@@ -73,6 +73,10 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 
 ![alt tag](https://i.ibb.co/bPqqybM/snyk-starter-open-source-1.png)
 
+
+
+
+
 # Snyk Code Steps
 
 Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time
@@ -131,9 +135,12 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 
 ![alt tag](https://i.ibb.co/M21xScH/Cross-site-scripting-Fix-Analysis.png)
 
-### Do you think you could fix this issue now?
+## To Go Further with Snyk Code - Snyk Code workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-code-workshop where additional steps are available (Snyk Code CLI Test and Snyk Code Test using VS Code)
+
+
+
 
 
 # Snyk Open Source Steps
@@ -190,7 +197,12 @@ Snyk integrates with your preferred Git repository to scan your manifest files f
 * Optionally now, go ahead and merge the PR!
 * Back in Snyk we can appreciate that our package.json file has 1 less Critical Severity Vulnerability if you did fix it
 
+## To Go Further with Snyk Open Source - Snyk Open Source workshop
+
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are guided (Testing using the Snyk CLI and the IDE Integration with VS Code)
+
+
+
 
 
 # Snyk Container Steps
@@ -252,7 +264,13 @@ Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" butto
 
 ![alt tag](https://i.ibb.co/vzndsKy/Snyk-Container-new-base-image.png)
 
+## To Go Further with Snyk Container - Snyk Container workshop
+
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-container-workshop where you will be able to scan a container image from a Docker Hub integration and do Container test using the Snyk CLI. 
+
+
+
+
 
 # Snyk Infrastructure as Code Steps
 
@@ -279,6 +297,8 @@ For each Vulnerability, Snyk displays the following ordered by Line no:
 Snyk IaC has a comprehensive set of security rules across AWS, Azure, GCP & Kubernetes with support for Terraform, CloudFormation, Kubernetes, and Helm configuration formats. The details of these issues, their impact, and how to fix them are all built-in to Snyk IaC, so developers get feedback directly in their own tools. For reference, we have also documented the security rules that we support for each provider below, along with relevant benchmarks and authoritative third-party references
 
 Navigate to [Snyk Infrastructure as Code](https://snyk.io/security-rules)
+
+## To Go Further with Snyk IaC - Snyk Infrastructure as Code workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-iac-workshop where you will be able to test different IaC files and test using the Snyk CLI.
 
