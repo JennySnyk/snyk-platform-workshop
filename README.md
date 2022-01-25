@@ -19,24 +19,27 @@ You can use the CLI for scanning and monitoring on your local machine, and integ
 
 ## What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
-* [Step 1 Fork the highly vulnerable Goof Application](#step-1-fork-the-highly-vulnerable-goof-application)
+* [Step 1 Fork the highly vulnerable Juice-Shop Application](#step-1-fork-the-highly-vulnerable-goof-application)
 * [Step 2 Configure GitHub Integration](#step-2-configure-gitHub-integration)
+
 Snyk Code steps
 * [Step 3 Enable Snyk Code within Snyk App](#step-3-enable-snyk-code-within-snyk-app)
 * [Step 4 Add project to find Snyk Code Vulnerabilities](#step-4-add-project-to-find-snyk-code-vulnerabilities)
+
 Snyk Open Source steps
 * [Step 5 Find vulnerabilities](#step-3-find-vulnerabilities)
 * [Step 6 Fix using a Pull Request](#step-4-fix-using-a-pull-request)
+
 Snyk Container steps
 * [Step 7 Find vulnerabilities in Goof’s Dockerfile](#step-5-find-vulnerabilities-in-goofs-dockerfile)
 * [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#step-6-fix-the-dockerfile-from-tag-using-a-pull-request)
+
 Snyk IaC steps
 * [Step 9 Find vulnerabilities in Goof’s Kubernetes yaml](#step-5-find-vulnerabilities-in-goofs-dockerfile)
 
 ## Prerequisites
 
 * public GitHub account - http://github.com
-* git CLI - https://git-scm.com/downloads
 * snyk CLI - https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI
 * Registered account on Snyk App - http://app.snyk.io
 
@@ -50,13 +53,13 @@ _Note: It is assumed your using a mac for these steps but it should also work on
 
 _NOTE: You may have already forked the Goopf application in that case go ahead and skip this step_
 
-Navigate to the following GitHub repo - https://github.com/snyk/goof
+Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
 
 * Click on the "**Fork**" button
 * Ensure you are forking this repo to your public GitHub account 
 * Click done
 
-![alt tag](https://i.ibb.co/Gdf7N2W/snyk-starter-open-source-2.png)
+![alt tag](https://i.ibb.co/PYCX43Q/Juice-Shop-Github.png)
 
 ## Step 2 Configure GitHub Integration
 
@@ -69,6 +72,10 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 * Fill in your Account Credentials to Connect your GitHub Account.
 
 ![alt tag](https://i.ibb.co/bPqqybM/snyk-starter-open-source-1.png)
+
+# Snyk Code Steps
+
+Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time
 
 ## Step 3 Enable Snyk Code within Snyk App
 
@@ -86,16 +93,14 @@ Now that Snyk is connected to your GitHub Account, import the Forked Repo "**spr
 
 * Navigate to Projects
 * Click "**Add Project**" then select "**GitHub**"
-* Click on the Repo you forked "**springbootemployee-api**"
+* Click on the Repo you forked "*juice-shop**"
 * Click "**Add Selected Repositories**"
 
-![alt tag](https://i.ibb.co/TmKzh1P/snyk-code-3.png)
+![alt tag](https://i.ibb.co/ngxDfvw/Import-Juice-Shop.png)
 
 * Once complete you should see a "**Code Analysis**" project as shown below
 
-_Note: There are only 2 code security issues , this is deliberate, and we will try "**Snyk Code**" on more vulnerable projects shortly_
-
-![alt tag](https://i.ibb.co/ZfddWxb/snyk-code-4.png)
+![alt tag](https://i.ibb.co/RpScxJ2/Snyk-Code-Results.png)
 
 * Click on "**Code Analysis**" to view our SAST scan results
 
@@ -109,13 +114,13 @@ For each Vulnerability, Snyk displays the following:
 6. A link to a Snyk Learn module on how to fix these type of vulnerabilities if available
 7. The ability to ignore issues you wish to remove from the list
 
-![alt tag](https://i.ibb.co/SJTXkDr/snyk-code-5.png)
+![alt tag](https://i.ibb.co/C2fT6bj/Snyk-Code-vuln.png)
 
 * Click on the "**Full Details**" button as shown below
 
 Snyk products all provide a developer-friendly experience, so Snyk Code helps developers to quickly understand the problem, learn the background, and how to approach it. Snyk Code helps you understand the dangerous code flow step-by-step. For every issue, Code also provides a link to the lines in the relevant files, to view more details on the problem like the CWE, and how to approach it.
 
-![alt tag](https://i.ibb.co/vwxw68k/snyk-code-6.png)
+![alt tag](https://i.ibb.co/HnL22t7/Cross-site-scripting-Dataflow.png)
 
 * Click on "**Fix Analysis**" to see how you can fix the issue based on other open source project. On this page you get not just source code example fixes but also the following detailed information
 
@@ -124,17 +129,16 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 3. Affected Environments
 4. How to prevent
 
-![alt tag](https://i.ibb.co/25P6M7g/snyk-code-7.png)
+![alt tag](https://i.ibb.co/M21xScH/Cross-site-scripting-Fix-Analysis.png)
 
 ### Do you think you could fix this issue now?
 
-Finally, if you have time go ahead and fork this repo and import this into Snyk App if you wish to see more code issues then the simple example we using here
+Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-code-workshop where additional steps are available (Snyk Code CLI Test and Snyk Code Test using VS Code)
 
-https://github.com/papicella/goof
 
-_Note: This may take a while as there are various other project files in this repo so you can always come back to this later to see the code results_
+# Snyk Open Source Steps
 
-![alt tag](https://i.ibb.co/CJDpRys/snyk-code-10.png)
+Snyk Open Source is a Software Composition Analysis took which seamlessly and proactively finds, prioritizes and fixes vulnerabilities and license violations in open source dependencies
 
 ## Step 3 Find vulnerabilities
 
