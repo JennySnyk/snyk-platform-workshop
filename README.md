@@ -21,8 +21,8 @@ You can use the CLI for scanning and monitoring on your local machine, and integ
 
 ## :open_book: What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
-* [Step 1 Fork the highly vulnerable Juice-Shop Application](#1%EF%B8%8F⃣---step-1---fork-the-highly-vulnerable-juice-shop-application)
-* [Step 2 Configure GitHub Integration](#2%EF%B8%8F⃣---step-2---configure-github-integration)
+* [Step 1 - Fork the highly vulnerable Juice-Shop Application](#1%EF%B8%8F⃣---step-1---fork-the-highly-vulnerable-juice-shop-application)
+* [Step 2 - Configure GitHub Integration](#2%EF%B8%8F⃣---step-2---configure-github-integration)
 
 Snyk Code steps
 * [Step 3 Enable Snyk Code within Snyk App]
@@ -175,7 +175,7 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 
 ![alt tag](https://i.ibb.co/xq2GWCs/Snyk-OS-vuln.png)
 
-## :six: - Step 6 - Fix using a Pull Request
+## 6️⃣ - Step 6 - Fix using a Pull Request
 
 When using the GitHub integration, and if a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. 
 
@@ -215,7 +215,7 @@ Snyk Container helps you find and fix vulnerabilities in container images. With 
 
 You may not always have access to the original source code that runs in your containers, but vulnerabilities in your code dependencies are still important. Snyk can detect and monitor open source dependencies for popular languages as part of the container scan
 
-## :seven: - Step 7 - Find vulnerabilities in Juice-Shop’s Dockerfile
+## 7️⃣ - Step 7 - Find vulnerabilities in Juice Shop's Dockerfile
 
 Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository. This allows you to examine security issues before building the image, so helps solve potential problems before they land in your registry or in production.
 
