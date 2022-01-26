@@ -22,7 +22,7 @@ You can use the CLI for scanning and monitoring on your local machine, and integ
 ## :open_book: What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
 * [Step 1 Fork the highly vulnerable Juice-Shop Application](#1%EF%B8%8F⃣---step-1---fork-the-highly-vulnerable-juice-shop-application)
-* [Step 2 Configure GitHub Integration](#two---step-2---configure-github-integration!)
+* [Step 2 Configure GitHub Integration](#2%EF%B8%8F⃣---step-2---configure-github-integration)
 
 Snyk Code steps
 * [Step 3 Enable Snyk Code within Snyk App]
@@ -85,7 +85,7 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 
 Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time
 
-## :three: - Step 3 - Enable Snyk Code within Snyk App
+## 3️⃣ - Step 3 - Enable Snyk Code within Snyk App
 
 * Click on the "**Settings**" button on the top most navigation bar as shown below
 
@@ -95,7 +95,7 @@ Snyk Code is developer-first, embedding SAST as part of the development process,
 
 ![alt tag](https://i.ibb.co/bP2FpGx/snyk-code-2.png)
 
-## :four: - Step 4 - Add project to find Snyk Code Vulnerabilities
+## 4️⃣ - Step 4 - Add project to find Snyk Code Vulnerabilities
 
 Now that Snyk is connected to your GitHub Account, import the Forked Repo "**juice-shop**" into Snyk as a Project.
 
@@ -151,7 +151,7 @@ Finally, to go further, feel free to look at this workshop https://github.com/pa
 
 Snyk Open Source is a Software Composition Analysis took which seamlessly and proactively finds, prioritizes and fixes vulnerabilities and license violations in open source dependencies
 
-## :five: - Step 5 - Find vulnerabilities
+## 5️⃣ - Step 5 - Find vulnerabilities
 
 * Since Juice-Shop project had been imported in the Step 3, you should see a "**package.json**" project as shown below. 
 
