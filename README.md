@@ -1,30 +1,34 @@
-# Introduction to Snyk Open Source Workshop
+# Introduction to Snyk Platform Workshop
 
 Snyk (pronounced sneak) is a developer security platform for securing code, dependencies, containers, and infrastructure as code. Snyk tests for vulnerabilities in your own code, open source dependencies, container images and infrastructure as code configurations, and offers context, prioritization, and remediation.
 
-## What languages does Snyk support?
+## :point_right: What languages does Snyk support?
 At the time of this workshop Snyk supports: JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, and Bazel. Learn about Snyk’s language coverage in our support documentation ([Snyk Open Source](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support), [Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support)).
 
-## What products and platforms does Snyk offer?
+## :point_right: What products and platforms does Snyk offer?
 Snyk’s developer security platform integrates four key products: Snyk Open Source, Snyk Code, Snyk Container, and Snyk Infrastructure as Code (Kubernetes, Terraform, etc.).
 
-## Which tools, IDEs, and platforms does Snyk integrate with?
+## :point_right: Which tools, IDEs, and platforms does Snyk integrate with?
 Taking a developer-first approach to security, Snyk integrates with leading IDE, repository, CI/CD, runtime, registry, and issue management tools.
 
-## How does Snyk’s security and vulnerability data compare to other vulnerability databases?
+## :point_right: How does Snyk’s security and vulnerability data compare to other vulnerability databases?
 Our security intelligence database, also known as the Snyk Intel Vulnerability Database is maintained by a dedicated research team that combines public sources, contributions from the developer community, proprietary research, and machine learning to continuously adapt to the changing and expanding nature of security threats.
 
-## Does Snyk have a CLI?
+## :point_right: Does Snyk have a CLI?
 You can use the CLI for scanning and monitoring on your local machine, and integrate it into your pipeline. You can use the Snyk CLI to scan your applications, containers, and infrastructure as code for security vulnerabilities.You can install the CLI via npm, Homebrew, Scoop, or manually. Learn more in our Snyk CLI documentation.
 
-## What we will do in this hands-on workshop?
+<br />
+
+## :open_book: What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
-* [Step 1 Fork the highly vulnerable Juice-Shop Application](#step-1-fork-the-highly-vulnerable-goof-application)
-* [Step 2 Configure GitHub Integration](#step-2-configure-github-integration)
+
+* [Step 1 - Fork the highly vulnerable Juice-Shop Application](#1%EF%B8%8F⃣---step-1---fork-the-highly-vulnerable-juice-shop-application)
+* [Step 2 - Configure GitHub Integration](#2%EF%B8%8F⃣---step-2---configure-github-integration)
+
 
 Snyk Code steps
-* [Step 3 Enable Snyk Code within Snyk App](#step-3-enable-snyk-code-within-snyk-app)
-* [Step 4 Add project to find Snyk Code Vulnerabilities](#step-4-add-project-to-find-snyk-code-vulnerabilities)
+* [Step 3 Enable Snyk Code within Snyk App]
+* [Step 4 Add project to find Snyk Code Vulnerabilities]
 
 Snyk Open Source steps
 * [Step 5 Find vulnerabilities](#step-5-find-vulnerabilities)
@@ -45,15 +49,17 @@ Snyk IaC steps
 
 _NOTE: Please ensure you have meet the Prerequisites prior to starting this workshop_ 
 
+<br />
+<br />
+<br />
+
 # Workshop Steps
 
-_Note: It is assumed your using a mac for these steps but it should also work on windows or linux with some modifications to the scripts potentially_
+## 1️⃣ - Step 1 - Fork the highly vulnerable Juice-Shop Application 
 
-## Step 1 Fork the highly vulnerable Goof Application
+_NOTE: You may have already forked the Juice-Shop application in that case go ahead and skip this step_
 
-_NOTE: You may have already forked the Goof application in that case go ahead and skip this step_
-
-Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
+Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop or from https://github.com/JennySnyk/juice-shop
 
 * Click on the "**Fork**" button
 * Ensure you are forking this repo to your public GitHub account 
@@ -61,7 +67,7 @@ Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
 
 ![alt tag](https://i.ibb.co/PYCX43Q/Juice-Shop-Github.png)
 
-## Step 2 Configure GitHub Integration
+## 2️⃣ - Step 2 - Configure GitHub Integration
 
 _NOTE: You may have already setup GitHub integration in that case go ahead and skip this step_
 
@@ -81,7 +87,7 @@ First we need to connect Snyk to GitHub so we can import our Repository. Do so b
 
 Snyk Code is developer-first, embedding SAST as part of the development process, enabling developers to build software securely during development, not trying to find and fix problems after the code is compiled. Snyk Code works in the IDEs and SCMs developers use to build and review software and provides fast, actionable, meaningful results to fix issues in real-time
 
-## Step 3 Enable Snyk Code within Snyk App
+## 3️⃣ - Step 3 - Enable Snyk Code within Snyk App
 
 * Click on the "**Settings**" button on the top most navigation bar as shown below
 
@@ -91,7 +97,7 @@ Snyk Code is developer-first, embedding SAST as part of the development process,
 
 ![alt tag](https://i.ibb.co/bP2FpGx/snyk-code-2.png)
 
-## Step 4 Add project to find Snyk Code Vulnerabilities
+## 4️⃣ - Step 4 - Add project to find Snyk Code Vulnerabilities
 
 Now that Snyk is connected to your GitHub Account, import the Forked Repo "**juice-shop**" into Snyk as a Project.
 
@@ -135,20 +141,19 @@ Snyk products all provide a developer-friendly experience, so Snyk Code helps de
 
 ![alt tag](https://i.ibb.co/M21xScH/Cross-site-scripting-Fix-Analysis.png)
 
-## To Go Further with Snyk Code - Snyk Code workshop
+## 📖 To Go Further with Snyk Code - Snyk Code workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-code-workshop where additional steps are available (Snyk Code CLI Test and Snyk Code Test using VS Code)
 
 <br />
 <br />
 <br />
-<hr />
 
 # Snyk Open Source Steps
 
 Snyk Open Source is a Software Composition Analysis took which seamlessly and proactively finds, prioritizes and fixes vulnerabilities and license violations in open source dependencies
 
-## Step 5 Find vulnerabilities
+## 5️⃣ - Step 5 - Find vulnerabilities
 
 * Since Juice-Shop project had been imported in the Step 3, you should see a "**package.json**" project as shown below. 
 
@@ -172,7 +177,7 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 
 ![alt tag](https://i.ibb.co/xq2GWCs/Snyk-OS-vuln.png)
 
-## Step 6 Fix using a Pull Request
+## 6️⃣ - Step 6 - Fix using a Pull Request
 
 When using the GitHub integration, and if a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. 
 
@@ -198,7 +203,7 @@ Snyk integrates with your preferred Git repository to scan your manifest files f
 * Optionally now, go ahead and merge the PR!
 * Back in Snyk we can appreciate that our package.json file has 1 less Critical Severity Vulnerability if you did fix it
 
-## To Go Further with Snyk Open Source - Snyk Open Source workshop
+## 📖 To Go Further with Snyk Open Source - Snyk Open Source workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-open-source-workshop where additional steps are guided (Testing using the Snyk CLI and the IDE Integration with VS Code)
 
@@ -212,7 +217,7 @@ Snyk Container helps you find and fix vulnerabilities in container images. With 
 
 You may not always have access to the original source code that runs in your containers, but vulnerabilities in your code dependencies are still important. Snyk can detect and monitor open source dependencies for popular languages as part of the container scan
 
-## Step 7 Find vulnerabilities in Juice-Shop’s Dockerfile
+## 7️⃣ - Step 7 - Find vulnerabilities in Juice Shop's Dockerfile
 
 Snyk detects vulnerable base images by scanning your Dockerfile when importing a Git repository. This allows you to examine security issues before building the image, so helps solve potential problems before they land in your registry or in production.
 
@@ -239,7 +244,7 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 
 ![alt tag](https://i.ibb.co/X72chjn/Snyk-Container-vuln.png)
 
-## Step 8 Fix the Dockerfile FROM tag using a Pull Request
+## 8️⃣ - Step 8 - Fix the Dockerfile FROM tag using a Pull Request
 
 Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" button as follows:
 
@@ -265,7 +270,7 @@ Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" butto
 
 ![alt tag](https://i.ibb.co/vzndsKy/Snyk-Container-new-base-image.png)
 
-## To Go Further with Snyk Container - Snyk Container workshop
+## 📖 To Go Further with Snyk Container - Snyk Container workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-container-workshop where you will be able to scan a container image from a Docker Hub integration and do Container test using the Snyk CLI. 
 
@@ -279,27 +284,27 @@ Snyk Infrastructure as Code allows you to find and fix vulnerabilities in your K
 
 Developer-focused infrastructure as code security with Snyk allows you to test and monitor Terraform modules and Kubernetes YAML, JSON, and Helm charts to detect configuration issues that could open your deployments to attack and malicious behavior.
 
-## Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml
+## 9️⃣ - Step 9 - Find vulnerabilities in Juice Shop's Kubernetes.yml
 
-* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the deployment file as shown below. 
+* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the deployment file as shown below.
 
 ![alt tag](https://i.ibb.co/zRB8dqY/Snyk-Ia-C-results.png)
 
 For each Vulnerability, Snyk displays the following ordered by Line no:
 
-1. Each Vulnerability grouped by line number and severity 
+1. Each Vulnerability grouped by line number and severity
 1. Each Vulnerability links to the Snyk policy it was defined against including the path to the issue, what the issue is, the impact and how to resolve it
 1. The ability to ignore issues you wish to remove from the list
 
 ![alt tag](https://i.ibb.co/MMFXpwc/Screenshot-2022-01-25-at-20-49-45.png)
 
-## Step 10 View Snyk IaC Rules
+## 1️⃣0️⃣ - Step 10 - View Snyk IaC Rules
 
 Snyk IaC has a comprehensive set of security rules across AWS, Azure, GCP & Kubernetes with support for Terraform, CloudFormation, Kubernetes, and Helm configuration formats. The details of these issues, their impact, and how to fix them are all built-in to Snyk IaC, so developers get feedback directly in their own tools. For reference, we have also documented the security rules that we support for each provider below, along with relevant benchmarks and authoritative third-party references
 
 Navigate to [Snyk Infrastructure as Code list of rules](https://snyk.io/security-rules)
 
-## To Go Further with Snyk IaC - Snyk Infrastructure as Code workshop
+## 📖 To Go Further with Snyk IaC - Snyk Infrastructure as Code workshop
 
 Finally, to go further, feel free to look at this workshop https://github.com/papicella/snyk-iac-workshop where you will be able to test different IaC files and test using the Snyk CLI.
 
