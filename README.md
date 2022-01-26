@@ -57,7 +57,7 @@ _NOTE: Please ensure you have meet the Prerequisites prior to starting this work
 
 _NOTE: You may have already forked the Juice-Shop application in that case go ahead and skip this step_
 
-Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
+Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop or from https://github.com/JennySnyk/juice-shop
 
 * Click on the "**Fork**" button
 * Ensure you are forking this repo to your public GitHub account 
