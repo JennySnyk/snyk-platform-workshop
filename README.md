@@ -21,8 +21,8 @@ You can use the CLI for scanning and monitoring on your local machine, and integ
 
 ## :open_book: What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
-* [Step 1 Fork the highly vulnerable Juice-Shop Application]#one---step-1---fork-the-highly-vulnerable-goof-application!
-* [Step 2 Configure GitHub Integration]#two---step-2---configure-github-integration![image]
+* [Step 1 Fork the highly vulnerable Juice-Shop Application](#one---step-1---fork-the-highly-vulnerable-goof-application!)
+* [Step 2 Configure GitHub Integration](#two---step-2---configure-github-integration!)
 
 Snyk Code steps
 * [Step 3 Enable Snyk Code within Snyk App]
