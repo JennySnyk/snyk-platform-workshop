@@ -61,7 +61,7 @@ _NOTE: You may have already forked the Juice-Shop application in that case go ah
 
 Navigate to the following GitHub repo - https://github.com/JennySnyk/juice-shop
 
-_NOTE: this repo come from the project Juice Shop from OWASP
+_NOTE: this repo come from the project Juice Shop from OWASP_
 
 * Click on the "**Fork**" button
 * Ensure you are forking this repo to your public GitHub account 
