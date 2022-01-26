@@ -21,24 +21,26 @@ You can use the CLI for scanning and monitoring on your local machine, and integ
 
 ## :open_book: What we will do in this hands-on workshop?
 In this hands-on workshop we will achieve the follow:
+
 * [Step 1 - Fork the highly vulnerable Juice-Shop Application](#1%EF%B8%8F⃣---step-1---fork-the-highly-vulnerable-juice-shop-application)
 * [Step 2 - Configure GitHub Integration](#2%EF%B8%8F⃣---step-2---configure-github-integration)
+
 
 Snyk Code steps
 * [Step 3 Enable Snyk Code within Snyk App]
 * [Step 4 Add project to find Snyk Code Vulnerabilities]
 
 Snyk Open Source steps
-* [Step 5 Find vulnerabilities]
-* [Step 6 Fix using a Pull Request]
+* [Step 5 Find vulnerabilities](#step-5-find-vulnerabilities)
+* [Step 6 Fix using a Pull Request](#step-6-fix-using-a-pull-request)
 
 Snyk Container steps
-* [Step 7 Find vulnerabilities in Juice-shop’s Dockerfile]
-* [Step 8 Fix the Dockerfile FROM tag using a Pull Request]
+* [Step 7 Find vulnerabilities in Juice-shop’s Dockerfile](#step-7-find-vulnerabilities-in-juice-shops-dockerfile)
+* [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#step-8-fix-the-dockerfile-from-tag-using-a-pull-request)
 
 Snyk IaC steps
-* [Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml]
-* [Step 10 View Snyk IaC Rules]
+* [Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml](#step-9-find-vulnerabilities-in-juice-shops-kubernetesyml)
+* [Step 10 View Snyk IaC Rules](#step-10-view-snyk-iac-rules)
 
 ## Prerequisites
 
