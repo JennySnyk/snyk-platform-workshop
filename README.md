@@ -53,8 +53,6 @@ _NOTE: Please ensure you have meet the Prerequisites prior to starting this work
 
 # Workshop Steps
 
-_Note: It is assumed your using a mac for these steps but it should also work on windows or linux with some modifications to the scripts potentially_
-
 ## :one: - Step 1 - Fork the highly vulnerable Goof Application
 
 _NOTE: You may have already forked the Goopf application in that case go ahead and skip this step_
