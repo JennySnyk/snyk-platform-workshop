@@ -242,7 +242,7 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 
 ![alt tag](https://i.ibb.co/X72chjn/Snyk-Container-vuln.png)
 
-## :height: - Step 8 - Fix the Dockerfile FROM tag using a Pull Request
+## 8️⃣ - Step 8 - Fix the Dockerfile FROM tag using a Pull Request
 
 Here we will go ahead and fix our Dockerfile using the "**Open a Fix PR**" button as follows:
 
@@ -282,9 +282,9 @@ Snyk Infrastructure as Code allows you to find and fix vulnerabilities in your K
 
 Developer-focused infrastructure as code security with Snyk allows you to test and monitor Terraform modules and Kubernetes YAML, JSON, and Helm charts to detect configuration issues that could open your deployments to attack and malicious behavior.
 
-## :nine: - Step 9 - Find vulnerabilities in Juice-Shop’s Kubernetes.yml
+## 9️⃣ - Step 9 - Find vulnerabilities in Juice Shop's Kubernetes.yml
 
-* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the Dockerfile as shown below. 
+* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the Kubernetes yaml as shown below. 
 
 ![alt tag](https://i.ibb.co/zRB8dqY/Snyk-Ia-C-results.png)
 
@@ -296,7 +296,7 @@ For each Vulnerability, Snyk displays the following ordered by Line no:
 
 ![alt tag](https://i.ibb.co/MMFXpwc/Screenshot-2022-01-25-at-20-49-45.png)
 
-## :one::zero: - Step 10 - View Snyk IaC Rules
+## 1️⃣0️⃣ - Step 10 - View Snyk IaC Rules
 
 Snyk IaC has a comprehensive set of security rules across AWS, Azure, GCP & Kubernetes with support for Terraform, CloudFormation, Kubernetes, and Helm configuration formats. The details of these issues, their impact, and how to fix them are all built-in to Snyk IaC, so developers get feedback directly in their own tools. For reference, we have also documented the security rules that we support for each provider below, along with relevant benchmarks and authoritative third-party references
 
