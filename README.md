@@ -27,8 +27,8 @@ In this hands-on workshop we will achieve the follow:
 
 
 Snyk Code steps
-* [Step 3 Enable Snyk Code within Snyk App](3%EF%B8%8F⃣---step-3---enable-snyk-code-within-snyk-app)
-* [Step 4 Add project to find Snyk Code Vulnerabilities](4%EF%B8%8F⃣---step-4---add-project-to-find-snyk-code-vulnerabilities)
+* [Step 3 Enable Snyk Code within Snyk App](#3%EF%B8%8F⃣---step-3---enable-snyk-code-within-snyk-app)
+* [Step 4 Add project to find Snyk Code Vulnerabilities](#4%EF%B8%8F⃣---step-4---add-project-to-find-snyk-code-vulnerabilities)
 
 Snyk Open Source steps
 * [Step 5 Find vulnerabilities](#5%EF%B8%8F⃣---step-5---find-vulnerabilities)
