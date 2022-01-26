@@ -53,9 +53,9 @@ _NOTE: Please ensure you have meet the Prerequisites prior to starting this work
 
 # Workshop Steps
 
-## :one: - Step 1 - Fork the highly vulnerable Goof Application
+## 1️⃣ - Step 1 - Fork the highly vulnerable Juice-Shop Application 
 
-_NOTE: You may have already forked the Goopf application in that case go ahead and skip this step_
+_NOTE: You may have already forked the Juice-Shop application in that case go ahead and skip this step_
 
 Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
 
@@ -65,7 +65,7 @@ Navigate to the following GitHub repo - https://github.com/juice-shop/juice-shop
 
 ![alt tag](https://i.ibb.co/PYCX43Q/Juice-Shop-Github.png)
 
-## :two: - Step 2 - Configure GitHub Integration
+## 2️⃣ - Step 2 - Configure GitHub Integration
 
 _NOTE: You may have already setup GitHub integration in that case go ahead and skip this step_
 
