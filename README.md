@@ -27,20 +27,20 @@ In this hands-on workshop we will achieve the follow:
 
 
 Snyk Code steps
-* [Step 3 Enable Snyk Code within Snyk App]
-* [Step 4 Add project to find Snyk Code Vulnerabilities]
+* [Step 3 Enable Snyk Code within Snyk App](3%EF%B8%8F⃣---step-3---enable-snyk-code-within-snyk-app)
+* [Step 4 Add project to find Snyk Code Vulnerabilities](4%EF%B8%8F⃣---step-4---add-project-to-find-snyk-code-vulnerabilities)
 
 Snyk Open Source steps
-* [Step 5 Find vulnerabilities](#step-5-find-vulnerabilities)
-* [Step 6 Fix using a Pull Request](#step-6-fix-using-a-pull-request)
+* [Step 5 Find vulnerabilities](#5%EF%B8%8F⃣---step-5---find-vulnerabilities)
+* [Step 6 Fix using a Pull Request](#6%EF%B8%8F⃣---step-6---fix-using-a-pull-request)
 
 Snyk Container steps
-* [Step 7 Find vulnerabilities in Juice-shop’s Dockerfile](#step-7-find-vulnerabilities-in-juice-shops-dockerfile)
-* [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#step-8-fix-the-dockerfile-from-tag-using-a-pull-request)
+* [Step 7 Find vulnerabilities in Juice-shop’s Dockerfile](#7%EF%B8%8F⃣---step-7---find-vulnerabilities-in-juice-shops-dockerfile)
+* [Step 8 Fix the Dockerfile FROM tag using a Pull Request](#8%EF%B8%8F⃣---step-8---fix-the-dockerfile-from-tag-using-a-pull-request)
 
 Snyk IaC steps
-* [Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml](#step-9-find-vulnerabilities-in-juice-shops-kubernetesyml)
-* [Step 10 View Snyk IaC Rules](#step-10-view-snyk-iac-rules)
+* [Step 9 Find vulnerabilities in Juice-Shop’s Kubernetes.yml](#9%EF%B8%8F⃣---step-9---find-vulnerabilities-in-juice-shops-kubernetesyml)
+* [Step 10 View Snyk IaC Rules](#1%EF%B8%8F⃣0%EF%B8%8F⃣---step-10---view-snyk-iac-rules)
 
 ## Prerequisites
 
