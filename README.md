@@ -3,7 +3,7 @@
 Snyk (pronounced sneak) is a developer security platform for securing code, dependencies, containers, and infrastructure as code. Snyk tests for vulnerabilities in your own code, open source dependencies, container images and infrastructure as code configurations, and offers context, prioritization, and remediation.
 
 ## :point_right: What languages does Snyk support?
-At the time of this workshop Snyk supports: JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, and Bazel. Learn about Snyk’s language coverage in our support documentation.
+At the time of this workshop Snyk supports: JavaScript, Java (Gradle, Maven), .NET, Python, Golang, Swift, Objective-C (CocoaPods), Scala, Ruby, PHP, and Bazel. Learn about Snyk’s language coverage in our support documentation ([Snyk Open Source](https://docs.snyk.io/products/snyk-open-source/language-and-package-manager-support), [Snyk Code](https://docs.snyk.io/products/snyk-code/snyk-code-language-and-framework-support)).
 
 ## :point_right: What products and platforms does Snyk offer?
 Snyk’s developer security platform integrates four key products: Snyk Open Source, Snyk Code, Snyk Container, and Snyk Infrastructure as Code (Kubernetes, Terraform, etc.).
@@ -101,7 +101,7 @@ Now that Snyk is connected to your GitHub Account, import the Forked Repo "**jui
 
 * Navigate to Projects
 * Click "**Add Project**" then select "**GitHub**"
-* Click on the Repo you forked "*juice-shop**"
+* Click on the Repo you forked "**juice-shop**"
 * Click "**Add Selected Repositories**"
 
 ![alt tag](https://i.ibb.co/ngxDfvw/Import-Juice-Shop.png)
@@ -165,7 +165,7 @@ First let's explore the Juice-Shop project risks by clicking on the "**package.j
 
 Thenk go back on the Snyk WebUI and let's have a look at the vulnerabilities.
 
-For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/) :
+For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://docs.snyk.io/features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) :
 1. The module that introduced it and, in the case of transitive dependencies, its direct dependency,
 1. Details on the path and proposed Remediation, as well as the specific vulnerable functions
 1. Overview
@@ -179,7 +179,7 @@ For each Vulnerability, Snyk displays the following ordered by our [Proprietary 
 
 When using the GitHub integration, and if a fix is available, Snyk can automatically upgrade the vulnerable dependency to a non-vulnerable version through a Pull Request. 
 
-* Click on "**Fix this vulnerability**" for "**typeorm Prototype Pollution**" issue as shown below
+* Click on "**Fix this vulnerability**" for "**Prototype Pollution**" issue as shown below
 
 ![alt tag](https://i.ibb.co/9NHPmn2/Snyk-OS-Fix-this-vuln.png)
 
@@ -230,7 +230,7 @@ This is handy as we can remove a substantial amount of issues just by using an a
 
 The supported base images can be found at this [link](https://snyk.io/docker-images/)
 
-For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://snyk.io/blog/snyk-priority-score/) :
+For each Vulnerability, Snyk displays the following ordered by our [Proprietary Priority Score](https://docs.snyk.io/features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) :
 
 1. The module (O/S, base image) that introduced it and, in the case of transitive dependencies, its direct dependency
 1. Details on the path and proposed Remediation, as well as the specific vulnerable functions
@@ -284,13 +284,13 @@ Developer-focused infrastructure as code security with Snyk allows you to test a
 
 ## 9️⃣ - Step 9 - Find vulnerabilities in Juice Shop's Kubernetes.yml
 
-* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the Kubernetes yaml as shown below. 
+* Since Juice-Shop project had been imported in the Step 3, you should see a reference for the deployment file as shown below.
 
 ![alt tag](https://i.ibb.co/zRB8dqY/Snyk-Ia-C-results.png)
 
 For each Vulnerability, Snyk displays the following ordered by Line no:
 
-1. Each Vulnerability grouped by line no and severity 
+1. Each Vulnerability grouped by line number and severity
 1. Each Vulnerability links to the Snyk policy it was defined against including the path to the issue, what the issue is, the impact and how to resolve it
 1. The ability to ignore issues you wish to remove from the list
 
@@ -300,7 +300,7 @@ For each Vulnerability, Snyk displays the following ordered by Line no:
 
 Snyk IaC has a comprehensive set of security rules across AWS, Azure, GCP & Kubernetes with support for Terraform, CloudFormation, Kubernetes, and Helm configuration formats. The details of these issues, their impact, and how to fix them are all built-in to Snyk IaC, so developers get feedback directly in their own tools. For reference, we have also documented the security rules that we support for each provider below, along with relevant benchmarks and authoritative third-party references
 
-Navigate to [Snyk Infrastructure as Code](https://snyk.io/security-rules)
+Navigate to [Snyk Infrastructure as Code list of rules](https://snyk.io/security-rules)
 
 ## 📖 To Go Further with Snyk IaC - Snyk Infrastructure as Code workshop
 
@@ -311,4 +311,4 @@ Thanks for attending and completing this workshop
 ![alt tag](https://i.ibb.co/7tnp1B6/snyk-logo.png)
 
 <hr />
-This workshop is adapted from Workshops provided by Pas Apicella [pas at snyk.io] a Solution Engineer at Snyk APJ
+This workshop is a compliation of Workshops provided by Pas Apicella [pas at snyk.io] a Principal Solution Engineer at Snyk APJ
